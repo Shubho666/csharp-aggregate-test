@@ -13,6 +13,7 @@ namespace aggregate.Tests
         [Fact]
         public static void ispresent()
         {
+            aggregate_gdp.Program.aggregator();
             bool flag = false;
             if (File.Exists("../../../../actual-output.json")) flag = true;
             Assert.True(flag);
